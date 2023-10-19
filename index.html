@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>Landing Page CocaCola</title>
+  </head>
+  <body>
+    <section class="section">
+      <header class="header">
+        <a href="#"
+          ><img
+            src="./asset/img/logo.png"
+            class="header_logo"
+            alt="this-is-logo"
+        /></a>
+        <ul class="header_list">
+          <li class="header_item">
+            <a href="#" class="header_item-link">Home</a>
+          </li>
+          <li class="header_item">
+            <a href="#" class="header_item-link">Products</a>
+          </li>
+          <li class="header_item">
+            <a href="#" class="header_item-link">What's New</a>
+          </li>
+          <li class="header_item">
+            <a href="#" class="header_item-link">Newsletter</a>
+          </li>
+          <li class="header_item">
+            <a href="#" class="header_item-link">Contact</a>
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="content_textBox">
+          <h2>That's What<br /><span>I Like</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et
+            asperiores dolore deserunt dicta dolorem blanditiis perferendis
+            dolores. Qui dignissimos ratione architecto magni. Illum est
+            praesentium officia? Aliquid, suscipit quibusdam?
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="content_imgBox">
+          <img src="./asset/img/pepsi001.png" alt="" class="img_hero" />
+        </div>
+      </div>
+      <div class="thumb-section">
+        <ul class="thumb">
+          <li class="thumb_item">
+            <img
+              class="thumb_item-img"
+              src="./asset/img/pepsi001.png"
+              onclick="imgSlider('pepsi001.png','blue')"
+              alt=""
+            />
+          </li>
+          <li class="thumb_item">
+            <img
+              class="thumb_item-img"
+              src="./asset/img/pepsi002.png"
+              onclick="imgSlider('pepsi002.png', 'red')"
+              alt=""
+            />
+          </li>
+          <li class="thumb_item">
+            <img
+              class="thumb_item-img"
+              src="./asset/img/pepsi003.png"
+              onclick="imgSlider('pepsi003.png', 'black')"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="sci-section">
+        <ul class="sci">
+          <li class="sci_item">
+            <a href="#" class="sci_item-link"
+              ><img src="./asset/img/facebook.png" alt=""
+            /></a>
+          </li>
+          <li class="sci_item">
+            <a href="#" class="sci_item-link"
+              ><img src="./asset/img/instagram.png" alt=""
+            /></a>
+          </li>
+          <li class="sci_item">
+            <a href="#" class="sci_item-link"
+              ><img src="./asset/img/twitter.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything, color) {
+        document.querySelector(".img_hero").src = "./asset/img/" + anything;
+        document.querySelector(".section").style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.sci-section {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+.sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &_item{
+        list-style: none;
+        &-link{
+            display: inline-block;
+            filter: invert(1);
+            margin: 5px 0;
+            transform: scale(.6);
+        }
+    }
+}
